@@ -3,11 +3,9 @@ import { useDispatch } from 'react-redux';
 import { fetchPosts } from '../actions';
 
 const PostList = () => {
-  const dispatch = useDispatch();
-
   useEffect(() => {
-    dispatch(fetchPosts());
-  }, [dispatch]);
+    fetchPosts();
+  });
 
   return <div>Post List</div>;
 };
