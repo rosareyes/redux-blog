@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchPosts } from "../actions";
+import { fetchPostsAndUsers } from "../actions";
 import UserHeader from "./userHeader";
 
 const PostList = () => {
@@ -8,9 +8,8 @@ const PostList = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchPosts());
+    dispatch(fetchPostsAndUsers());
   }, [dispatch]);
-  console.log(posts);
 
   return (
     <div>

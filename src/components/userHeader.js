@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { fetchUser } from "../actions";
 import { useDispatch, useSelector } from "react-redux";
 
 const UserHeader = (props) => {
@@ -12,9 +11,9 @@ const UserHeader = (props) => {
 
   //Dispatchtoprops
   //this is what actually fetches the users from the api calling the fetchUser
-  useEffect(() => {
-    dispatch(fetchUser(props.userId));
-  }, [dispatch, props.userId]);
+  // useEffect(() => {
+  //   dispatch(fetchUser(props.userId));
+  // }, [dispatch, props.userId]);
 
   if (!user) {
     return null;
