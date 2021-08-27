@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchPostsAndUsers } from "../actions";
+import { fetchPostsAndUsers, fetchUser, fetchPosts } from "../actions";
 import UserHeader from "./userHeader";
 
 const PostList = () => {

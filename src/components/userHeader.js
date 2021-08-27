@@ -7,8 +7,6 @@ const UserHeader = (props) => {
   const user = useSelector((state) =>
     state.user.find((user) => user.id === props.userId)
   );
-  const dispatch = useDispatch();
-
   //Dispatchtoprops
   //this is what actually fetches the users from the api calling the fetchUser
   // useEffect(() => {
